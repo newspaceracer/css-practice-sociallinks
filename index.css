@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    border-radius: 12px;
+    width: 384px;
+    padding: 40px;
+    text-align: center;
+}
+
+.card .name {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.card .location{
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+    color: hsl(75, 94%, 57%);
+}
+
+.bio{
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 24px 0;
+}
+
+.social-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px; /*this is how you add spaces between elements only as opposed to margin which affects all boundaries*/
+}
+
+button{
+    width: 304px;
+    border-radius: 8px;
+    border: none; /*need to remove the default border of the button */
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 12px;
+    /*animation for ease-in-out with dissolve effect on the hover subclass*/
+    transition: 600ms ease; 
+}
+
+button:hover{
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(75, 94%, 57%);
+    transition: ease;/* figma on hover animation is very fast, not sure that's intended to be implemented that way, if you don't add an attribution for how fast the transition should be on either transformation, the system seems to apply the same time to both transitions. Figma's slow transition seems to be immediate on hover, and then slow after the hover. */
+}
+
+img{
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    margin: 0 0 24px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: white;
+}
+
+.attribution a { 
+    color: hsl(75, 94%, 57%);
+}

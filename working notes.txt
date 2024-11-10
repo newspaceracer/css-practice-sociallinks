@@ -1,0 +1,34 @@
+- Responsive flex box style fixed in the middle of screen
+- Card (DONE)
+  - 12 border radius
+  - 40 padding
+  - background-color: hsl(0, 0%, 12%)
+- header (DONE, except for margins)
+  - picture 88 x 88
+  - Name 
+    - color: white
+  - location (preset-2-bold)
+    - color: hsl(75, 94%, 57%)
+    - 4 margin between name and location
+  - bio
+    - color: white
+  - bio, name+location, picture 24 margin
+- buttons
+  - change color on hover
+  - transition delay of colors when hover
+    - dissolve, spring curve, 1 mass, 80 stiffness, 20 damping
+  - text present 2-bold
+  - 8 border radius
+  - background-color: hsl(0, 0%, 20%)
+  - color: hsl(0, 0%, 100%)
+  - 16 margin between buttons
+
+
+  - Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+- Font size (paragraph): 14px
+
+
+Lessons learned:
+- when you add too many divs the idea that margins collapse doesn't really work the same way because now the margin is not just between the visible elements but between the elements and the divs that contain them so I need to be more careful when adding divs and also more strategic
+- figma on hover animation is very fast, not sure that's intended to be implemented that way, if you don't add an attribution for how fast the transition should be on either transformation, the system seems to apply the same time to both transitions. Figma's slow transition seems to be immediate on hover, and then slow after the hover
